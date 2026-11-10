@@ -273,7 +273,18 @@
       background: var(--accent);
       color: var(--accent-fg);
     }
+    button#send {
+      background: #112238;
+      color: #ffffff;
+      border: 2px solid #112238;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
 
+    button#send:hover {
+      background: #112238;
+      border-color: #112238;
+    }
     button:focus-visible, .btn:focus-visible {
       outline: 3px solid var(--accent);
       outline-offset: 3px;
@@ -307,10 +318,11 @@
     }
 
     .fine {
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 18px;
-    }
+    color: #112238;
+    font-size: 18px;
+    margin-top: 18px;
+    font-weight: 600;
+    } 
 
     /* CELULARES E TABLETS */
     @media (max-width: 640px) {
@@ -379,7 +391,7 @@
     /* BOTÃO DE ENVIO PELO WHATSAPP */
 .whatsapp-btn {
   background: #25D366;
-  color: #ffffff;
+  color: #1d5423;
   border: 2px solid #25D366;
   font-weight: 700;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
@@ -600,7 +612,7 @@
 
       ? "Sentimos muito que a experiência não tenha sido a ideal. Nossa equipe vai analisar o seu caso para ajudar. 💙"
 
-      : "Ficamos muito felizes em ter ajudado. Foi um prazer atender você. 💙";
+      : "Ficamos muito felizes em ter ajudado. Foi um prazer atender você. ✅🩵";
 
     var actions = document.getElementById("actions");
     var fine = document.getElementById("fine");
